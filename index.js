@@ -8,7 +8,7 @@ dodger.style.bottom = "0px";
 
 //dodger.style.left = "0px";
 
-document.addEventListener("keydown", function (event) {
+document.addEventListener("keydown", function (event) {//logs when a key is pressed
   console.log(event);
 });
 
