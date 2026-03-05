@@ -12,7 +12,7 @@ document.addEventListener("keydown", function (event) {
   console.log(event);
 });
 
-function moveDodgerLeft() {
+function moveDodgerLeft() {//moves the dodger left by 1px
   const leftNumbers = dodger.style.left.replace("px", "");
   const left = parseInt(leftNumbers, 10);
 
@@ -21,7 +21,7 @@ function moveDodgerLeft() {
   }
 }
 
-function moveDodgerRight() {
+function moveDodgerRight() {//moves the dodger right by 1px
   const leftNumbers = dodger.style.left.replace("px", "");
   const left = parseInt(leftNumbers, 10);
 
@@ -30,7 +30,7 @@ function moveDodgerRight() {
   }
 }
 
-document.addEventListener("keydown", function (e) {
+document.addEventListener("keydown", function (e) {//moves the dodger left or right depending on the key pressed
   if (e.key === "ArrowLeft") {
     moveDodgerLeft();
     } else if (e.key === "ArrowRight") {
